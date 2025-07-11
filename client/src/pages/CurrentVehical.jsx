@@ -117,7 +117,7 @@ export default function CurrentFCPS() {
         All Vehical Record
       </h2>
       <h2 className="text-sm text-center font-medium mb-9 text-slate-600">
-        Vehical Information
+        Vehical Details Information
       </h2>
 
       <div className="flex justify-center">
@@ -246,8 +246,11 @@ export default function CurrentFCPS() {
                       <td className="py-3">
                         {dayjs(veh.createdAt).format("DD-MMM-YYYY")}
                       </td>
-                      <td className="mr-3 py-3">
+                      <td className="flex py-3">
                         <Link to={`/detail/${veh._id}`}>
+                          <BiSolidCommentDetail />
+                        </Link>
+                        <Link className="ml-2" to={`/report/${veh._id}`}>
                           <BiSolidCommentDetail />
                         </Link>
                       </td>

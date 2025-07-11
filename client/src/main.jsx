@@ -8,7 +8,8 @@ import CurrentVehical from "./pages/CurrentVehical.jsx";
 import VehicalDetail from "./pages/VehicalDetail.jsx";
 
 // All Reports
-import TestReport from "./reports/TestReport.jsx";
+// import TestReport from "./reports/TestReport.jsx";
+import Report from "./pages/Report.jsx";
 
 const root = document.getElementById("root");
 
@@ -21,7 +22,7 @@ ReactDOM.createRoot(root).render(
       <Route path="/detail/:id" element={<VehicalDetail />} />
 
       {/* All Report */}
-      <Route path="/report" element={<TestReport />} />
+      <Route path="/report/:id" element={<Report />} />
     </Routes>
   </BrowserRouter>
 );
